@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { GrArticle } from "react-icons/gr";
 import styles from "./header.module.css"
 import Navbar from './Navbar';
 
