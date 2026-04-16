@@ -24,10 +24,10 @@ const Navbar = () => {
 
         <div className={styles.navLinksWrappers} style={{clipPath : toggle && "polygon(0 0, 100% 0, 100% 100%, 0 100%)" || ""}}>
             <ul className={styles.navLinks}>   
-                <Link className={styles.navLink} href='/'>Home</Link>
-                <Link className={styles.navLink} href='/articles'>Articles</Link>
-                <Link className={styles.navLink} href='/about'>About</Link>
-                <Link className={styles.navLink} href='/admin'>Admin Dashboard </Link>
+                <Link onClick={()=> setToggle(false)} className={styles.navLink} href='/'>Home</Link>
+                <Link onClick={()=> setToggle(false)} className={styles.navLink} href='/articles'>Articles</Link>
+                <Link onClick={()=> setToggle(false)} className={styles.navLink} href='/about'>About</Link>
+                <Link onClick={()=> setToggle(false)} className={styles.navLink} href='/admin'>Admin Dashboard </Link>
             </ul>
         </div>
       </nav>
