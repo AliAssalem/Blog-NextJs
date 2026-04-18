@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter,Geist, Geist_Mono } from "next/font/google";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./globals.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer";
@@ -36,6 +38,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Header />
+        <ToastContainer theme="colored" position="top-center"/>
         <main>{children}</main>
         <Footer/>
       </body>
