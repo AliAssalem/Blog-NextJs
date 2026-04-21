@@ -1,3 +1,6 @@
+import AddCommentForm from "@/app/components/comments/AddCommentForm"
+import CommentItem from "@/app/components/comments/CommentItem"
+
 interface SingleArticlePageProps {
   params: Promise<{ id: string }>
 }
@@ -29,6 +32,11 @@ const SingleArticlePage = async ({ params }: SingleArticlePageProps) => {
           {article.body}
         </p>
       </div>
+      <AddCommentForm/>
+      <h4 className='text-xl text-gray-800 ps-1 font-semibold mb-2 mt-7'>Comments</h4>
+      <CommentItem/>
+      <CommentItem/>
+      <CommentItem/>
     </section>
   )
 }
