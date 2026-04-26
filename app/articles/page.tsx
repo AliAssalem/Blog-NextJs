@@ -6,7 +6,7 @@ import { Article } from "../utils/types"
 
 const ArticlesPage = async () => {
 
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts',{cache:"no-store"}) 
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts') 
 
   if (!response.ok) {
     throw new Error("Failed to fetch articles")
