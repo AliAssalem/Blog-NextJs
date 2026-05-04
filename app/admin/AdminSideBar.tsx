@@ -11,7 +11,7 @@ const AdminSideBar = () => {
       <span className='hidden lg:block'>Dashboard</span>
       </Link>
       <ul className='mt-10 flex items-center justify-center flex-col  lg:items-start'>
-        <Link className='flex items-center text-xl mb-5 lg:border-b border-gray-300 hover:text-yellow-200 transition-colors' href="/admin/articles-table">
+        <Link className='flex items-center text-xl mb-5 lg:border-b border-gray-300 hover:text-yellow-200 transition-colors' href="/admin/articles-table?pageNumber=1">
           <MdOutlineArticle className='me-1'/>
           <span className='hidden lg:block ml-2'>Articles</span>
         </Link>
