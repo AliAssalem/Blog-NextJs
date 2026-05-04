@@ -3,7 +3,7 @@ import { getArticles } from "../apiCalls/articleApiCall"
 import ArticleItem from "../components/articles/ArticleItem"
 import Pagination from "../components/articles/Pagination"
 import SearchArticleInput from "../components/articles/SearchArticleInput"
-import { Article } from "../generated/prisma"
+import { Article } from "@prisma/client"
 import { ARTICLE_PER_PAGE } from "../utils/constants"
 import prisma from "../utils/db"
 

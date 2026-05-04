@@ -1,4 +1,4 @@
-import { Article } from '@/app/generated/prisma';
+import { Article } from "@prisma/client"
 import { ARTICLE_PER_PAGE } from '@/app/utils/constants';
 import prisma from '@/app/utils/db';
 import { CreateArticleDto } from '@/app/utils/dtos';

@@ -1,10 +1,10 @@
 import { getArticles } from "@/app/apiCalls/articleApiCall";
 import Pagination from "@/app/components/articles/Pagination";
-import { Article } from "@/app/generated/prisma";
 import { ARTICLE_PER_PAGE } from "@/app/utils/constants";
 import prisma from "@/app/utils/db";
 import Link from "next/link";
 import DeleteArticleButton from "./DeleteArticleButton";
+import { Article } from "@prisma/client";
 
 interface AdminArticlesTableProps {
   searchParams: Promise<{ pageNumber: string }>;

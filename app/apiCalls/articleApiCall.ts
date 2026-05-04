@@ -1,4 +1,4 @@
-import { Article } from "../generated/prisma";
+import { Article } from "@prisma/client"
 import { DOMAIN } from "../utils/constants";
 import { SingleArticle } from "../utils/types";
 

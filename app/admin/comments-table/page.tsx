@@ -2,7 +2,7 @@ import { getAllComments } from "@/app/apiCalls/adminApiCall";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import DeleteCommentButton from "./DeleteCommentButton";
-import { Comment } from "@/app/generated/prisma";
+import { Comment } from "@prisma/client";
 
 
 const AdminCommentsTable = async () => {

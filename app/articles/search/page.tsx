@@ -1,6 +1,6 @@
 import { getArticlesBasedOnSearch } from "@/app/apiCalls/articleApiCall";
 import ArticleItem from "@/app/components/articles/ArticleItem";
-import { Article } from "@/app/generated/prisma/client";
+import { Article } from "@prisma/client"
 
 interface SearchPageProps {
   searchParams: Promise<{ searchText: string }>;

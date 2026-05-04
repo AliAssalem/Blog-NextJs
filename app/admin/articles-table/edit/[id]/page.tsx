@@ -1,6 +1,6 @@
 import { getSingleArticle } from '@/app/apiCalls/articleApiCall';
 import EditArticleForm from './EditArticleFrom';
-import { Article } from '@/app/generated/prisma';
+import { Article } from '@prisma/client';
 
 interface EditArticlePageProps {
     params: Promise<{ id: string }>;

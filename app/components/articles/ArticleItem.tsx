@@ -1,4 +1,4 @@
-import { Article } from "@/app/generated/prisma"
+import { Article } from "@prisma/client"
 import Link from "next/link"
 
 interface ArticleItemProps {

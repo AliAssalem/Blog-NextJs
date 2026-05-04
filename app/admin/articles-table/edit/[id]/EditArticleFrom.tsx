@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
-import { Article } from '@/app/generated/prisma';
 import { DOMAIN } from '@/app/utils/constants';
+import { Article } from '@prisma/client';
 
 interface EditArticleFormProps {
     article: Article;

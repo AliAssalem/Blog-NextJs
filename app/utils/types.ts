@@ -1,4 +1,4 @@
-import { Article, Comment, User } from '@/app/generated/prisma' ;
+import { Article, Comment, User } from '@prisma/client' ;
 
 // export type Article = {
 //   id:number,

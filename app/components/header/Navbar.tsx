@@ -19,9 +19,7 @@ const Navbar = ({ isAdmin } : NavbarProps) => {
         <nav className={styles.navbar}>
             <div>
                 <Link href="/" className={styles.logo}>
-                    CLOUD
-                    <GrTechnology />
-                    HOSTING
+                    Blog
                 </Link>
                 <div className={styles.menu}>
                     {toggle ? (<IoMdClose onClick={() => setToggle(prev => !prev)} />) : (<AiOutlineMenu onClick={() => setToggle(prev => !prev)} />)}

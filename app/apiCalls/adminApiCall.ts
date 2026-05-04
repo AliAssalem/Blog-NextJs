@@ -1,5 +1,5 @@
-import { Comment } from "../generated/prisma";
 import { DOMAIN } from "../utils/constants";
+import { Comment } from "@prisma/client"
 
 
 // Get all comments
